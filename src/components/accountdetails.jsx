@@ -4,6 +4,8 @@ import { useState } from "react";
 
 const Accountdetails = () => {
 
+
+
     const [firstname, setFirstname] = useState("");
     const [lastname, setLastname] = useState("");
     const [oldpassword, setOldpassword] = useState("");
@@ -85,9 +87,29 @@ const Accountdetails = () => {
 
     const formcss = {
         display: "flex",
-        flexDirection: "column"
+        flexDirection: "column",
     }
 
+    const inpstyle = {
+        padding:"2%",
+        fontSize:"16px",
+        borderRadius:"5px",
+        border:"1px solid gray",
+        marginBottom:"4%"
+    }
+    const btnstyle = {
+        width:"45%",
+        padding:"2%",
+        fontSize:"16px",
+        fontWeight:"500",
+        backgroundColor:"rgb(37, 115, 216)",
+        color:"white",
+        border:"none",
+        borderRadius:"5px",
+        marginTop:"3%",
+        marginBottom:"5%",
+        cursor:"pointer"
+    }
 
 
     return (
@@ -98,29 +120,29 @@ const Accountdetails = () => {
                 <form onSubmit={(e) => e.preventDefault()} style={formcss}>
                     <label htmlFor="firstname"><b>First name</b></label>
                     <input type="text" placeholder="e.g John" value={firstname}
-                        onChange={(e) => setFirstname(e.target.value)} />
+                        onChange={(e) => setFirstname(e.target.value)} style={inpstyle} />
                     <label htmlFor="lastname"><b>Last name</b></label>
                     <input type="text" placeholder="e.g Smith" value={lastname}
-                        onChange={(e) => setLastname(e.target.value)} />
-                    <button onClick={changename}>Update personal information</button>
+                        onChange={(e) => setLastname(e.target.value)} style={inpstyle} />
+                    <button onClick={changename} style={btnstyle}>Update personal information</button>
                 </form>
             </div>
             <p>Change your password</p>
             <form onSubmit={(e) => e.preventDefault()} style={formcss}>
                 <label htmlFor="oldpassword"><b>Old Password</b></label>
                 <input type="password" value={oldpassword}
-                    onChange={(e) => setOldpassword(e.target.value)} />
+                    onChange={(e) => setOldpassword(e.target.value)} style={inpstyle}/>
                 <label htmlFor="newpassword"><b>New Password</b></label>
                 <input type="password" value={newpassword}
-                    onChange={(e) => setNewpassword(e.target.value)} />
+                    onChange={(e) => setNewpassword(e.target.value)} style={inpstyle}/>
                 <div>
                     Password Requirements
-                    <ul>
-                        <li>Has Minimum 10 Characters</li>
-                        <li>Contains Atleast 10 Characters</li>
+                    <ul style={{margin:"0", padding:"0"}}>
+                        <li style={{marginLeft:"3%", padding:"0"}}>Has Minimum 10 Characters</li>
+                        <li style={{marginLeft:"3%", padding:"0"}}>Contains Atleast 10 Characters</li>
                     </ul>
                 </div>
-                <button onClick={changepassword}>Update personal information</button>
+                <button onClick={changepassword} style={btnstyle}>Change Password</button>
             </form>
         </div>
     )

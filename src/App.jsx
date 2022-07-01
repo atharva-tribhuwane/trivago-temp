@@ -3,6 +3,7 @@ import React from "react";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import Accountmain from "./components/accountmain"
+import {Routes, Route} from "react-router-dom";
 export default function App() {
 
   const btnstyle = {
@@ -12,9 +13,8 @@ export default function App() {
   }
   return (
     <div style={{ fontfamily: "Arial,Helvetica,Sans,Sans-Serif,Sans Serif" }}>
-      {/* <Login /> */}
+      <Login />
       {/* <Signup/> */}
-      <Accountmain />
     </div>
   );
 }

@@ -5,7 +5,8 @@ import Accountleft from "./accountleft";
 const Accountmain = ()=>{
     const accnmain = {
         display:"flex",
-        width:"60%"
+        width:"60%",
+        margin:"auto"
     }
     return(
         <div style={accnmain}>

@@ -30,7 +30,8 @@ const Logintop = () => {
           style={{
             fontSize: "17px",
             marginLeft:"2%",
-            marginTop:"0"
+            marginTop:"0",
+            color:"rgb(88, 88, 88)"
            
           }}
         >

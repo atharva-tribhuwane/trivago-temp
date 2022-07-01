@@ -25,7 +25,7 @@ const Signuptop = () => {
           textAlign: "start"
         }}
       >
-        <p style={{marginLeft:"2%",  marginBottom:"1%", fontSize:"22px"}}><b>Log in or create an account</b></p>
+        <p style={{marginLeft:"2%",  marginBottom:"1%", fontSize:"22px"}}><b>Create Your Account</b></p>
         <p
           style={{
             fontSize: "17px",
@@ -34,7 +34,7 @@ const Signuptop = () => {
            
           }}
         >
-         Enter your e-mail address to start
+         Add a strong password to finish up
         </p>
       </div>
     </>
