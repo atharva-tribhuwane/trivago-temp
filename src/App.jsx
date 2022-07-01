@@ -2,8 +2,7 @@
 import React from "react";
 import Login from "./components/login";
 import Signup from "./components/signup";
-import Accountleft from "./components/accountleft"
-import Accountdetails from "./components/accountdetails"
+import Accountmain from "./components/accountmain"
 export default function App() {
 
   const btnstyle = {
@@ -15,7 +14,7 @@ export default function App() {
     <div style={{ fontfamily: "Arial,Helvetica,Sans,Sans-Serif,Sans Serif" }}>
       {/* <Login /> */}
       {/* <Signup/> */}
-      <Accountdetails />
+      <Accountmain />
     </div>
   );
 }

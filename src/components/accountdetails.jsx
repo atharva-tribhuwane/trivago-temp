@@ -91,7 +91,7 @@ const Accountdetails = () => {
 
 
     return (
-        <div>
+        <div style={{width:"60%"}}>
             <h1>Account Details</h1>
             <p>Personal Information</p>
             <div>

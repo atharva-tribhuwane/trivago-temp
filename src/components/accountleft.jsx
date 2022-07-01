@@ -3,7 +3,8 @@ import React from "react";
 const Accountleft = ()=>{
 
     const diiiv = {
-        border:"1px solid red"
+        border:"1px solid red",
+        width:"40%"
     }
 
 
