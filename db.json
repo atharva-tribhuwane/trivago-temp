@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "phone": "9846284625",
+      "email": "user1@email.com",
+      "password": "user@123",
+      "recentlyvieved": "",
+      "previousbookings": ""
+    },
+    {
+      "name": "Atharva Trib",
+      "phone": "",
+      "email": "tribhuwane.a@gmail.com",
+      "password": "abcd",
+      "recentlyvieved": "",
+      "previousbookings": "",
+      "id": 2
+    }
+  ]
+}
